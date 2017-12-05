@@ -1,0 +1,15 @@
+{
+  "name": "gif-compressor",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.5",
+    "multer": "^1.3.0"
+  }
+}

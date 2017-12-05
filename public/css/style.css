@@ -1,0 +1,45 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#upload_form {
+  width: 300px;
+}
+
+.compression {
+  margin-top: 5px;
+  -webkit-appearance: none;
+  height: 5px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+.compression:hover {
+  opacity: 1;
+}
+.compression::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+.compression::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}

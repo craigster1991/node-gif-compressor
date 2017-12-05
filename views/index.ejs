@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <form id="upload_form" enctype="multipart/form-data" method="post" action="/upload" required>
+      <div class="form-group">
+        <label for="gif">Upload Gif:</label>
+        <input type="file" name="gif" id="gif" accept="image/gif" required>
+        <br>
+        <br>
+        <label for="compression">Compression Amount:</label>
+        <input type="range" min="0" max="500" value="50" class="compression" name="compression" id="compression">          
+        <br>
+        <br>
+        <label for="colours">Colours Limit:</label>
+        <select name="colours" id="colours">
+          <option value="same">No Change</option>
+          <option value="32">32</option>
+          <option value="64">64</option>
+          <option value="128">128</option>
+          <option value="256">256</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Compress it!" class="btn btn-default">
+      </div>
+    </form>
+  </body>
+</html>
